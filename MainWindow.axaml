@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:CompileBindings="False"
+        x:Class="Session4.MainWindow"
+        Title="Session4"
+		Background="WhiteSmoke">
+	<Grid RowDefinitions="Auto,*,Auto">
+		<DockPanel Grid.Row="0"
+				   Height="32">
+			<TextBox Name="SearchBox"
+					 Width="298"
+					 HorizontalAlignment="Left"
+					 Watermark="Поиск"
+					 Margin="30 0 0 0"/>
+			<ComboBox Name="SortBox"
+					  Width="124"
+					  HorizontalAlignment="Right"
+					  Margin="160 0 0 0">
+				<ComboBoxItem></ComboBoxItem>
+			</ComboBox>
+			<ComboBox Name="FilterBox"
+					  Width="124"
+					  HorizontalAlignment="Right"
+					  Margin="0 0 30 0">
+				<ComboBoxItem></ComboBoxItem>
+			</ComboBox>
+		</DockPanel>
+		<ListBox Name="LBProducts"
+				 Background="White"
+				 Grid.Row="1"
+				 Margin="30 15 30 15"
+				 SelectionMode="Multiple, Toggle">
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate>
+					<WrapPanel HorizontalAlignment="Center"/>
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border Height="100"
+							Width="100"
+							Background="Red"
+							CornerRadius="10">
+						<StackPanel VerticalAlignment="Bottom">
+							<TextBlock Text="{Binding Id}"
+									   FontSize="20"/>
+						</StackPanel>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</Grid>
+</Window>
