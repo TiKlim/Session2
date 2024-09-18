@@ -9,10 +9,11 @@ namespace Session4
         public MainWindow()
         {
             InitializeComponent();
+            SetData();
         }
         public void SetData()
         {
-            LBProducts.ItemsSource = Helper.DataObj.OrderBy(x => x.Id);
+            LBProducts.ItemsSource = Helper.DataObj.Products;
         }
     }
 }

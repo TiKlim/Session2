@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\PROFI\\source\\repos\\Session4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|c:\\users\\profi\\source\\repos\\session4\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|c:\\users\\profi\\source\\repos\\session4\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|c:\\users\\profi\\source\\repos\\session4\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|c:\\users\\profi\\source\\repos\\session4\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1194F5DD-13D2-4E8D-8012-3538A7A96918}|Session4.csproj|c:\\users\\profi\\source\\repos\\session4\\context\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +31,33 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\Session4\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "MainWindow.axaml",
+              "ToolTip": "C:\\Users\\PROFI\\source\\repos\\Session4\\MainWindow.axaml",
+              "RelativeToolTip": "MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-18T11:28:26.528Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\Session4\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "MainWindow.axaml.cs",
               "ToolTip": "C:\\Users\\PROFI\\source\\repos\\Session4\\MainWindow.axaml.cs",
               "RelativeToolTip": "MainWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T13:04:41.844Z",
+              "WhenOpened": "2024-09-18T11:35:22.066Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -46,27 +67,22 @@
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "C:\\Users\\PROFI\\source\\repos\\Session4\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:05:48.151Z",
+              "WhenOpened": "2024-09-18T11:37:48.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Helper.cs",
               "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\Session4\\Context\\Helper.cs",
               "RelativeDocumentMoniker": "Context\\Helper.cs",
               "ToolTip": "C:\\Users\\PROFI\\source\\repos\\Session4\\Context\\Helper.cs",
               "RelativeToolTip": "Context\\Helper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:02:02.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2024-09-18T11:35:39.422Z"
             }
           ]
         }

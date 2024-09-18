@@ -9,6 +9,6 @@ namespace Session4.Context
 {
     internal class Helper
     {
-        public static List<Product> DataObj = new List<Product>();
+        public static User734Context DataObj = new User734Context();
     }
 }
