@@ -16,27 +16,31 @@
 		  ShowGridLines="True">
 		
 			<TextBox Name="SearchBox"
-					 Width="268"
+					 Width="440"
 					 HorizontalAlignment="Left"
 					 Watermark="Поиск"
 					 Margin="30 0 0 0"
 					 Grid.Row="0"
 					 Grid.Column="0"/>
-			<ComboBox Name="SortBox"
-					  Width="124"
+			<ComboBox Name="FilterBox"
+					  Width="224"
 					  HorizontalAlignment="Right"
 					  Margin="160 0 0 0"
 					  Grid.Row="0"
 					  Grid.Column="1">
 				<ComboBoxItem></ComboBoxItem>
 			</ComboBox>
-			<ComboBox Name="FilterBox"
-					  Width="124"
+			<ComboBox Name="SortBox"
+					  Width="234"
 					  HorizontalAlignment="Right"
 					  Margin="0 0 30 0"
 					  Grid.Row="0"
-					  Grid.Column="2">
-				<ComboBoxItem></ComboBoxItem>
+					  Grid.Column="2"
+					  SelectedIndex="0"
+					  SelectionChanged="ComboBox_SelectionChanged">
+				<ComboBoxItem>Все товары</ComboBoxItem>
+				<ComboBoxItem>Стоимость по возрастанию</ComboBoxItem>
+				<ComboBoxItem>Стоимость по убыванию</ComboBoxItem>
 			</ComboBox>
 		
 		<ListBox Name="LBProducts"
@@ -53,11 +57,12 @@
 				<DataTemplate>
 					<Border Height="333"
 							Width="250"
+							Background="{Binding SColor}"
 							BorderBrush="Gray"
 							BorderThickness="1"
 							CornerRadius="9">
 						<Grid ColumnDefinitions=""
-							  RowDefinitions="Auto,Auto,Auto,Auto"
+							  RowDefinitions="Auto,Auto,Auto,Auto,Auto"
 							  Margin="5 0 0 0">
 							<Image Source="{Binding Picture}"
 								   Height="210"
@@ -66,12 +71,12 @@
 									   Text="{Binding Price}"
 									   FontWeight="Bold"
 									   FontSize="17"
-									   Foreground="#04a0ff"
 									   Margin="0 5 0 0"/>
 							<TextBlock Grid.Row="2"
 									   Text="{Binding topical}"
 									   TextWrapping="Wrap"
-									   FontSize="12"/>
+									   FontSize="12"
+									   Foreground="#04a0ff"/>
 							<TextBlock Grid.Row="3"
 									   Text="{Binding ProductName}"
 									   TextWrapping="Wrap"

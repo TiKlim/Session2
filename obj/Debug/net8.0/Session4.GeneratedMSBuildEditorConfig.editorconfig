@@ -24,3 +24,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/PROFI/source/repos/Session4/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/PROFI/source/repos/Session4/Window1.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -1,4 +1,5 @@
-﻿using Avalonia.Media.Imaging;
+﻿using Avalonia.Media;
+using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
 
@@ -26,4 +27,5 @@ public partial class Product
 
     public string? topical => Activity == 1 ? "актуально" : "неактуально";
     public Bitmap? Picture => Image != null ? new Bitmap($@"Assets\\Товары школы\\{Image}") : null;
+    public SolidColorBrush SColor => Activity == 1 ? new SolidColorBrush(Color.Parse("White")) : new SolidColorBrush(Color.Parse("Gray"));
 }

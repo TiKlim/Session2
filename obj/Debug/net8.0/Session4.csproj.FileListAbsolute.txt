@@ -152,3 +152,6 @@ C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\Avalonia\Session4.dll
 C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\Avalonia\Session4.pdb
 C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\refint\Avalonia\Session4.dll
 C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\Session4.sourcelink.json
+C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\Session4.dll
+C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\refint\Session4.dll
+C:\Users\PROFI\source\repos\Session4\obj\Debug\net8.0\Session4.pdb

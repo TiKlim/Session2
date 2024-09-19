@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Session4.Window1"
+		WindowStartupLocation="CenterScreen"
+		x:CompileBindings="False"
+        Title="Window1">
+
+	<Grid RowDefinitions="*,*,*,*"
+		  ColumnDefinitions="*,*,*">
+		<TextBox Grid.Row="0"
+				 Grid.Column="1"
+				 Width="230"
+				 Height="35"
+				 Watermark="Назване товара"
+				 TextWrapping="Wrap"/>
+		<TextBox Grid.Row="1"
+				 Grid.Column="1"
+				 Width="230"
+				 Height="35"
+				 Watermark="Стоимость"
+				 TextWrapping="Wrap"/>
+		<TextBox Grid.Row="0"
+				 Grid.RowSpan="3"
+				 Grid.Column="3"
+				 Height="260"
+				 Margin="10 0 10 0"
+				 Watermark="Введите описание"/>
+	</Grid>
+
+</Window>
