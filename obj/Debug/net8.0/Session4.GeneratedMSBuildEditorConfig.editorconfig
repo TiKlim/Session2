@@ -19,11 +19,11 @@ build_property.ProjectDir = C:\Users\PROFI\source\repos\Session4\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
+[C:/Users/PROFI/source/repos/Session4/AddProduct.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/PROFI/source/repos/Session4/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/PROFI/source/repos/Session4/MainWindow.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[C:/Users/PROFI/source/repos/Session4/Window1.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
