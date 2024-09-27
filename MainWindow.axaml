@@ -1,0 +1,136 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1490" d:DesignHeight="800"
+		MinWidth="1490"
+		MinHeight="800"
+		x:CompileBindings="False"
+        x:Class="Session4.MainWindow"
+		WindowStartupLocation="CenterScreen"
+        Title="Session4"
+		Background="#e7fabf">
+	
+	<Grid RowDefinitions="auto,*,Auto"
+		  ColumnDefinitions="*,*,*"
+		  ShowGridLines="False">
+		
+			<TextBox Name="SearchBox"
+					 Width="440"
+					 HorizontalAlignment="Left"
+					 Watermark="Поиск по названию"
+					 Margin="30 10 0 0"
+					 Grid.Row="0"
+					 Grid.Column="0"
+					 TextChanged="SearchBox_TextChanged"/>
+			<ComboBox Name="FilterBox"
+					  Width="224"
+					  HorizontalAlignment="Right"
+					  Margin="160 10 0 0"
+					  Grid.Row="0"
+					  Grid.Column="1"
+					  SelectedIndex="0"
+					  SelectionChanged="FilterBox_SelectionChanged">
+				<ComboBoxItem>Все производители</ComboBoxItem>
+				<ComboBoxItem></ComboBoxItem>
+			</ComboBox>
+			<ComboBox Name="SortBox"
+					  Width="234"
+					  HorizontalAlignment="Right"
+					  Margin="0 10 30 0"
+					  Grid.Row="0"
+					  Grid.Column="2"
+					  SelectedIndex="0"
+					  SelectionChanged="ComboBox_SelectionChanged">
+				<ComboBoxItem>Все товары</ComboBoxItem>
+				<ComboBoxItem>Стоимость по возрастанию</ComboBoxItem>
+				<ComboBoxItem>Стоимость по убыванию</ComboBoxItem>
+			</ComboBox>
+		
+		<ListBox Name="LBProducts"
+				 Background="White"
+				 Grid.Row="1"
+				 Grid.ColumnSpan="3"
+				 Margin="30 15 30 15">			
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate>
+					<WrapPanel HorizontalAlignment="Center"/>
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border Height="333"
+							Width="250"
+							Background="{Binding SColor}"
+							BorderBrush="Gray"
+							BorderThickness="1"
+							CornerRadius="9">
+						<Grid ColumnDefinitions=""
+							  RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+							  Margin="5 0 0 0">
+							<Image Source="{Binding Picture}"
+								   Height="210"
+								   Margin="0 5 0 0"/>
+							<TextBlock Grid.Row="1"
+									   Text="{Binding Price}"
+									   FontWeight="Bold"
+									   FontSize="17"
+									   Margin="0 5 0 0"/>
+							<TextBlock Grid.Row="2"
+									   Text="{Binding topical}"
+									   TextWrapping="Wrap"
+									   FontSize="12"
+									   Foreground="#04a0ff"/>
+							<TextBlock Grid.Row="3"
+									   Text="{Binding ProductName}"
+									   TextWrapping="Wrap"
+									   FontSize="15"
+									   FontWeight="Bold"/>
+						</Grid>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		
+		<Button Grid.Row="2"
+				Grid.Column="2"
+				HorizontalAlignment="Right"
+				Height="45"
+				Width="178"
+				Margin="0 0 30 10"
+				Background="WhiteSmoke"
+				BorderBrush="Black"
+				BorderThickness="0.8"
+				Name="Add">
+			<TextBlock Text="Добавить товар"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Center"
+					   FontSize="17"/>
+		</Button>
+
+		<Border Grid.Row="2"
+				Grid.Column="0"
+				HorizontalAlignment="Left"
+				Height="45"
+				Width="178"
+				Margin="30 0 0 10"
+				Background="White"
+				BorderBrush="Black"
+				BorderThickness="0.8"
+				CornerRadius="4">
+			<DockPanel HorizontalAlignment="Center"
+					   VerticalAlignment="Center">
+				<TextBlock HorizontalAlignment="Left"
+						   Name="Output"
+						   FontSize="17"/>
+				<TextBlock Text=" из "
+						   HorizontalAlignment="Center"
+						   FontSize="17"/>
+				<TextBlock HorizontalAlignment="Right"
+						   Name="Total"
+						   FontSize="17"/>
+			</DockPanel>
+		</Border>
+		
+	</Grid>
+</Window>
